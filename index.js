@@ -1,8 +1,8 @@
-var audio = new Audio('/kiss_me_thru_the_phone_nightcore.mp3');
+var audio = new Audio('/audio/kiss_me_thru_the_phone_nightcore.mp3');
 let playButton = document.getElementById("play");
 let startTime = 0;
 let img = new Image();
-let jumpTime = 0;
+let jumpTime = 4;
 document.body.appendChild(img);
 document.body.appendChild
 
@@ -29,6 +29,12 @@ function tick() {
             console.log("transitioned");
             display_image(index+1);
         } 
+        if (getElapsedTime() > 27) {
+            document.body.innerHTML = ''
+            document.write("this is all so far")
+            audio.pause()
+            return;
+        }
     });
     requestAnimationFrame(tick);
 }
