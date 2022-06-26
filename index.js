@@ -2,8 +2,10 @@ var audio = new Audio('./audio/kiss_me_thru_the_phone_nightcore.mp3');
 let playButton = document.getElementById("play");
 let i = 0;
 let startTime = 0;
-let img = new Image();
 let jumpTime = 0;
+audio.currentTime = jumpTime;
+
+let img = new Image();
 document.body.appendChild(img);
 document.body.appendChild
 
@@ -11,7 +13,6 @@ document.body.appendChild
 
 playButton.addEventListener("click", () => {
     audio.play();
-    audio.currentTime = jumpTime;
     startTime = performance.now();
     playButton.remove();
     init();
@@ -32,7 +33,7 @@ function tick() {
         {
             display_image(index+1);
         } 
-        if (getElapsedTime() > 30) {
+        if (getElapsedTime() > 33 - jumpTime) {
             document.body.innerHTML = ''
             document.write("this is all so far")
             audio.pause()
