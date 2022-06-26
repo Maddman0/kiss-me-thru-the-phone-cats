@@ -1,0 +1,22 @@
+{
+  "name": "kiss-me-thru-the-phone-cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maddman0/kiss-me-thru-the-phone-cats.git"
+  },
+  "author": "maddman0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maddman0/kiss-me-thru-the-phone-cats/issues"
+  },
+  "homepage": "https://github.com/Maddman0/kiss-me-thru-the-phone-cats#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
