@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color:rgb(234, 211, 206);
 }
 
 img {
@@ -7,8 +8,13 @@ img {
     text-align: center;
     border: 20;
     box-shadow: 0px 0px 30px;
-    width: 40%;
+    width: 35%;
 }
 canvas {
     box-shadow: 0px 0px 30px;
+}
+
+button {
+    border-radius: 2px;
+    
 }
